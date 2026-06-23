@@ -1,0 +1,63 @@
+.habits-page {
+  padding: 30px;
+  text-align: center;
+}
+
+.input-section {
+  margin-bottom: 25px;
+}
+
+.habit-input {
+  width: 320px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+}
+
+.add-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.habits-list {
+  margin-top: 30px;
+}
+
+.habit-item {
+  width: 500px;
+  margin: 15px auto;
+  padding: 15px 20px;
+
+  background: #111827;
+
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habit-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.complete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
