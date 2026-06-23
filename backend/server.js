@@ -5,6 +5,8 @@ import mongoose from "mongoose";
 
 import authRoutes from "./routes/authRoutes.js";
 import goalRoutes from "./routes/goalRoutes.js";
+import noteRoutes from "./routes/noteRoutes.js";
+import habitRoutes from "./routes/habitRoutes.js";
 
 dotenv.config();
 
@@ -17,6 +19,8 @@ app.use(express.json());
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/goals", goalRoutes);
+app.use("/api/notes", noteRoutes);
+app.use("/api/habits", habitRoutes);
 
 // Test Route
 app.get("/", (req, res) => {
@@ -34,7 +38,7 @@ mongoose
     console.log(error.message);
   });
 
-// Server Start
+// Start Server
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
